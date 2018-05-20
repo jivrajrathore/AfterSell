@@ -35,6 +35,24 @@ public class LocationPage extends GenericFunctions {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submit_Btn;
 	
+	@FindBy(xpath=".//td/a[text()='M1']")
+	WebElement firstRecord;
+	@FindBy(xpath=".//input[@id='location-19']")
+	WebElement selecteCheckBox;
+	@FindBy(xpath=".//*[@id='deactivateServiceproviderlocation']")
+	WebElement deactivateLocationBtn;
+	
+	public void check_Deactivate_Location_Btn() {
+		GenericFunctions.implicitly_wait(10);
+		my_Company_Details_Link.click();
+		Locations_Btn.click();
+		firstRecord.click();
+		is_active_Checkbox.click();
+		submit_Btn.click();
+		GenericFunctions.performOnElement(selecteCheckBox);
+        deactivateLocationBtn.click();
+	}
+	
 	int i;
 	int row;
 	private String locationName;
@@ -47,25 +65,6 @@ public class LocationPage extends GenericFunctions {
 	private String officeType;
 	
 	
-
-	/*public void check_AddLocation_Btn() {
-		GenericFunctions.implicitly_wait(10);
-		my_Company_Details_Link.click();
-		Locations_Btn.click();
-		GenericFunctions.elementToBeClickeble(add_Location_Btn, 20);
-		add_Location_Btn.click();
-		//GenericFunctions.presence_of_located_element("form-control model-form", 20);
-		location_Name_Field.sendKeys("Hadapsar");
-		location_Code_Field.sendKeys("511028");
-		address_Field.sendKeys("E-4,trump tower");
-		selectFormDDL(country_Picklist, "Germany");
-		state_Field.sendKeys("Rajasthan");
-		city_Field.sendKeys("ajmer");
-		pincode_Field.sendKeys("66565");
-		selectFormDDL(office_Type_Picklist, "HEAD OFFICE");
-		performOnElement(is_active_Checkbox);
-		submit_Btn.click();
-}*/
 	 public void add_location_method(String locationNameA, String locationCodeA, String addressA, String countryA, String stateA, String cityA, String pincodeA , String officeTypeA) {
 		 location_Name_Field.sendKeys(locationNameA);
 			location_Code_Field.sendKeys(locationCodeA);
@@ -116,4 +115,6 @@ public class LocationPage extends GenericFunctions {
 
 	    }
 	}
+	
+	
 }

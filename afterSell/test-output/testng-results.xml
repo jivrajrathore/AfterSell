@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27609" started-at="2018-04-18T17:07:32Z" finished-at="2018-04-18T17:07:59Z">
+  <suite name="Suite" duration-ms="85271" started-at="2018-05-19T14:12:02Z" finished-at="2018-05-19T14:13:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27609" started-at="2018-04-18T17:07:32Z" finished-at="2018-04-18T17:07:59Z">
-      <class name="src.test.java.afterSell.testCases.LocationPageTestCase">
-        <test-method status="PASS" signature="main()[pri:0, instance:src.test.java.afterSell.testCases.LocationPageTestCase@3ffcd140]" name="main" is-config="true" duration-ms="14237" started-at="2018-04-18T17:07:32Z" description="this method execute before the class" finished-at="2018-04-18T17:07:46Z">
+    <test name="Test" duration-ms="85271" started-at="2018-05-19T14:12:02Z" finished-at="2018-05-19T14:13:27Z">
+      <class name="src.test.java.afterSell.testCases.AMCServiceTestCase">
+        <test-method status="PASS" signature="main()[pri:0, instance:src.test.java.afterSell.testCases.AMCServiceTestCase@1372ed45]" name="main" is-config="true" duration-ms="12929" started-at="2018-05-19T14:13:08Z" description="this method execute before the class" finished-at="2018-05-19T14:13:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="verify_addLocation_Btn()[pri:0, instance:src.test.java.afterSell.testCases.LocationPageTestCase@3ffcd140]" name="verify_addLocation_Btn" duration-ms="13312" started-at="2018-04-18T17:07:46Z" finished-at="2018-04-18T17:07:59Z">
+        <test-method status="PASS" signature="verify_AMC_Detail()[pri:0, instance:src.test.java.afterSell.testCases.AMCServiceTestCase@1372ed45]" name="verify_AMC_Detail" duration-ms="6529" started-at="2018-05-19T14:13:21Z" finished-at="2018-05-19T14:13:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_addLocation_Btn -->
+        </test-method> <!-- verify_AMC_Detail -->
+      </class> <!-- src.test.java.afterSell.testCases.AMCServiceTestCase -->
+      <class name="src.test.java.afterSell.testCases.SupportProductsTestCase">
+        <test-method status="PASS" signature="main()[pri:0, instance:src.test.java.afterSell.testCases.SupportProductsTestCase@4ba2ca36]" name="main" is-config="true" duration-ms="9127" started-at="2018-05-19T14:12:34Z" description="this method execute before the class" finished-at="2018-05-19T14:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="support_product_btn()[pri:0, instance:src.test.java.afterSell.testCases.SupportProductsTestCase@4ba2ca36]" name="support_product_btn" duration-ms="6779" started-at="2018-05-19T14:12:43Z" finished-at="2018-05-19T14:12:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- support_product_btn -->
+      </class> <!-- src.test.java.afterSell.testCases.SupportProductsTestCase -->
+      <class name="src.test.java.afterSell.testCases.SupportBrandTestCase">
+        <test-method status="PASS" signature="main()[pri:0, instance:src.test.java.afterSell.testCases.SupportBrandTestCase@3444d69d]" name="main" is-config="true" duration-ms="10538" started-at="2018-05-19T14:12:50Z" description="this method execute before the class" finished-at="2018-05-19T14:13:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="verify_Support_Brand()[pri:0, instance:src.test.java.afterSell.testCases.SupportBrandTestCase@3444d69d]" name="verify_Support_Brand" duration-ms="7819" started-at="2018-05-19T14:13:00Z" finished-at="2018-05-19T14:13:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Support_Brand -->
+      </class> <!-- src.test.java.afterSell.testCases.SupportBrandTestCase -->
+      <class name="src.test.java.afterSell.testCases.LocationPageTestCase">
+        <test-method status="PASS" signature="main()[pri:0, instance:src.test.java.afterSell.testCases.LocationPageTestCase@120d6fe6]" name="main" is-config="true" duration-ms="25682" started-at="2018-05-19T14:12:02Z" description="this method execute before the class" finished-at="2018-05-19T14:12:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="verify_Locations()[pri:0, instance:src.test.java.afterSell.testCases.LocationPageTestCase@120d6fe6]" name="verify_Locations" duration-ms="5752" started-at="2018-05-19T14:12:28Z" finished-at="2018-05-19T14:12:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Locations -->
       </class> <!-- src.test.java.afterSell.testCases.LocationPageTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
